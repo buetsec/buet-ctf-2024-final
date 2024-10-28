@@ -1,7 +1,7 @@
 ## Recycle Bin
 **Catagory:** Warmup, crypto/ misc. 
 
-**Difficulties:** Easy 
+**Difficulty:** Easy 
 
 **Point:** 50 
 
