@@ -1,0 +1,7 @@
+version: '2.4'
+services:
+  babyrsarevenge:
+    build: .
+    ports:
+      - 5420:5000
+    privileged: true
