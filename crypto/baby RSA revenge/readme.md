@@ -1,7 +1,7 @@
 
 ## Challenge: baby RSA revenge
 - **Difficulty**: Medium
-- **Points**: 300
+- **Points**: 300 (Dynamic)
 - **Author**: Sumit Alam Khan
 
 As the laziest problem setter of the bunch, it was only a matter of time before I started to plagiarize problems. To make matters worse, 
