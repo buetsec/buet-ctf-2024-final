@@ -2,6 +2,8 @@ from Crypto.Util.number import long_to_bytes as l2b, isPrime, GCD
 from pwn import *
 from functools import reduce
 
+context.log_level = 'error'
+
 def get_conn():
     io = remote('127.0.0.1', 5420)
     return io
