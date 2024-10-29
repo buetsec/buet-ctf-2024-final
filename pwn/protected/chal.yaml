@@ -1,0 +1,13 @@
+name: protected
+categories:
+  - pwn
+level: Medium
+dependency: N/A
+value: Dynamic (400 to 100)
+flag: BUETCTF{my_pr0t3ct10n5_g0_brrrrrrrrrr_ba367b75b5b4bbb9}
+description: |-
+  You seem to be breaking all my chals. So I did not disable any protections. I declare it protected.
+files:
+  - src: ./protected.zip
+authors:
+  - gr007

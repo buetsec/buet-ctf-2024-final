@@ -21,7 +21,7 @@ void setup() {
   }
 }
 
-void win() { system("cat cat"); }
+void win() { system("/bin/sh"); }
 
 int main() {
   setup();
@@ -30,12 +30,11 @@ int main() {
   fgets(name, 64, stdin);
   char welcome[120];
   sprintf(welcome, "Welcome %s", name);
-  printf("She sells sea /bin/sh\0");
+  printf("She sells sea shore\0");
   printf("\nBy the sea shore\n");
   printf(welcome);
   char key[120];
   printf("License key: ");
   fgets(key, 400, stdin);
-  win();
   return 0;
 }

@@ -1,0 +1,13 @@
+name: pawtected
+categories:
+  - pwn
+level: Hard
+dependency: N/A
+value: Dynamic (400 to 100)
+flag: BUETCTF{my_c4t_g1v3_p4wt3ct10n_c52db4aa7ba8560f}
+description: |-
+  My cat is my guardian angle. She will protect my sea shells.
+files:
+  - src: ./pawtected.zip
+authors:
+  - gr007
