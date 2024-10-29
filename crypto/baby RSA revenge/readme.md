@@ -1,6 +1,6 @@
 
 ## Challenge: baby RSA revenge
-- **Difficulty**: Medium
+- **Difficulty**: Hard
 - **Points**: 300 (Dynamic)
 - **Author**: Sumit Alam Khan
 
