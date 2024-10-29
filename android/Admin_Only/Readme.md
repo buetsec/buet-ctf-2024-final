@@ -2,7 +2,7 @@
 - Challenge Author: [marufmurtuza](https://marufmurtuza.github.io)
 - Challenge Category: Android
 - Challenge Difficulty: Easy
-- Challenge Point: 100
+- Challenge Point: 100 (Dynamic)
 - Challenge Flag: 
 `BUETCTF{N3v3R_Ign0re_Th3_Manifest5_<GENERATED_HASH>}`
 
