@@ -2,7 +2,7 @@
 - Challenge Author: [marufmurtuza](https://marufmurtuza.github.io)
 - Challenge Category: Reverse
 - Challenge Difficulty: Easy
-- Challenge Point: 100
+- Challenge Point: 100 (Dynamic)
 - Challenge Flag:
   `BUETCTF{Y0u_5av3d_th3_5uicida1_biNary_bUt_At_wh4t_c05t?_<GENERATED_HASH>}`
 
