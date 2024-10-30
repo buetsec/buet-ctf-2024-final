@@ -1,7 +1,7 @@
 name: unprotected
 categories:
   - pwn
-level: Medium
+level: Easy
 dependency: N/A
 value: Dynamic (150 to 50)
 flag: BUETCTF{th3_cu5t0m3r_15_4lw4y5_r1ght_fdadd078ea86a482}
@@ -10,5 +10,7 @@ description: |-
   So, we had to comply... What could possibly go wrong?
 files:
   - src: ./unprotected.zip
+connections:
+  - nc 178.128.214.190 1348
 authors:
   - gr007

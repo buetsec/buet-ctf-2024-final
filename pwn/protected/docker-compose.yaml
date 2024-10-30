@@ -1,6 +1,8 @@
 services:
   protected:
     build: .
+    environment:
+      - JAIL_TIME=300
     ports:
       - 1438:5000
     privileged: true

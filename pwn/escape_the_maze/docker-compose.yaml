@@ -1,0 +1,9 @@
+services:
+  escape:
+    build: .
+    environment:
+      - JAIL_TIME=30
+      - JAIL_MEM=20M
+    ports:
+      - 7777:5000
+    privileged: true

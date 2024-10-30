@@ -9,5 +9,7 @@ description: |-
   You seem to be breaking all my chals. So I did not disable any protections. I declare it protected.
 files:
   - src: ./protected.zip
+connections:
+  - nc 178.128.214.190 1438
 authors:
   - gr007

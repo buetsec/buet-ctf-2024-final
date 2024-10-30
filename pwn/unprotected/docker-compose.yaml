@@ -1,6 +1,8 @@
 services:
   unprotected:
     build: .
+    environment:
+      - JAIL_TIME=300
     ports:
       - 1348:5000
     privileged: true

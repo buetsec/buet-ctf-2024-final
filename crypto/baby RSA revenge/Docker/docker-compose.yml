@@ -1,7 +1,9 @@
-version: '2.4'
 services:
   babyrsarevenge:
     build: .
+    environment:
+      - JAIL_TIME=300
+      - JAIL_MEM=20M
     ports:
       - 5420:5000
     privileged: true
