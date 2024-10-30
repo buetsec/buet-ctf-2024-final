@@ -3,15 +3,20 @@
 Here's a binary, go and see what it can do.
 ```
 
-## Points
+### Points
 ```
 50
 ```
 
-## Author
+### Author
 ```
 @fazledyn
 ```
 
-## Solution
+### Challenge Files
+```
+https://drive.google.com/drive/folders/1sqj0o43gBxaXjVUX-xAHRiaQVoHX7WVq?usp=sharing
+```
+
+### Solution
 - It's a Deno binary. Run `strings` on it, use Cyberchef, and done!
