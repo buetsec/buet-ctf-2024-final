@@ -2,7 +2,7 @@
 - Challenge Author: [marufmurtuza](https://marufmurtuza.github.io)
 - Challenge Category: Misc
 - Challenge Difficulty: Easy
-- Challenge Point: 50
+- Challenge Point: 75
 - Challenge Flag: 
 `BUETCTF{SSTV_broadcast_from_bcf_imaginary_space_station}`
 
