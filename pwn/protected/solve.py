@@ -11,7 +11,7 @@ context.binary = elf
 offset = 0x80 - 0x8
 
 #p = process(elf.path)
-p = remote("localhost", 1438)
+p = remote("178.128.214.190", 1438)
 #gdb.attach(
 #    p,
 #    """

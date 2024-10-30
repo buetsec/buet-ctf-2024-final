@@ -1,0 +1,8 @@
+services:
+  meowlibc:
+    build: .
+    environment:
+      - JAIL_TIME=300
+    ports:
+      - 1369:5000
+    privileged: true

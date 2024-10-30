@@ -1,0 +1,16 @@
+name: meowlibc
+categories:
+  - pwn
+level: Hard
+dependency: pawtected
+value: Dynamic (150 to 50)
+flag: BUETCTF{my_c4t_5up3r_5tr0ng_fabdac7b1ebceda6}
+description: |-
+  My cat was supposed to keep me safe. But it could not because you were given it's meowlibc.
+  Now, no meowlibc for you. And also, no container for you.
+files:
+  - src: ./meowlibc.zip
+connections:
+  - nc 178.128.214.190 1369
+authors:
+  - gr007
