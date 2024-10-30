@@ -30,7 +30,7 @@ int main() {
   fgets(name, 64, stdin);
   char welcome[120];
   sprintf(welcome, "Welcome %s", name);
-  printf("She sells sea shore\0");
+  printf("She sells sea shell\0");
   printf("\nBy the sea shore\n");
   printf(welcome);
   char key[120];
