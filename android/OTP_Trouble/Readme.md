@@ -8,7 +8,7 @@
 
 - Challenge Description:
 
-```No Description```
+```This app is for only admins. Are you an admin?```
 
 [OTP_Trouble.apk](./OTP_Trouble.apk)
 
