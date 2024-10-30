@@ -4,7 +4,7 @@
 - Challenge Difficulty: Easy
 - Challenge Point: 100 (Dynamic)
 - Challenge Flag: 
-`BUETCTF{{G00D_Work!_Y0u_35c4p3d_Th3_Maz3_Amazingly_<GENERATED_HASH>}`
+`BUETCTF{G00D_Work!_Y0u_35c4p3d_Th3_Maz3_Amazingly_<GENERATED_HASH>}`
 
 - Challenge Description:
 
