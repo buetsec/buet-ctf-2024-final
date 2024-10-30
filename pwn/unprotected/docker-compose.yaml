@@ -1,0 +1,6 @@
+services:
+  unprotected:
+    build: .
+    ports:
+      - 1348:5000
+    privileged: true
