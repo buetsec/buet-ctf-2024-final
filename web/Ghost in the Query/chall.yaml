@@ -1,0 +1,27 @@
+name: Ghost in the Query
+categories:
+  - Web
+level: Medium
+dependency: N/A
+value: Dynamic (200 to 125)
+flag: BUETCTF{InJ3cT0r__oF_T#e-Sh@d3s__Sk!ll3d!@C0ntrol5_tQiZXxBPY5gm}
+description: |-
+  Welcome to The Shades' secure database access portal—well, it was secure until now. 
+  An anonymous informant has leaked a tool for accessing a Noxhaven SQL database. 
+  It's said this portal was used by the megacorp Nexus before The Fall. With the 
+  right touch, you can even share your discoveries with others in the network...or exploit 
+  a vulnerability lurking beneath its code. Are you skilled enough to leave your mark 
+  on Nexus's own systems?  
+hints:
+  - Rumor has it that the data stored here holds clues to Nexus's downfall. But it's 
+      just a query interface—or is it? (Penalty - 15)
+  - They say this portal can only run queries, but with the right syntax, you might 
+      be able to slip in some code of your own. (Penalty - 15)
+files:
+  - src: Deployed link and port of Server
+authors:
+  - C0d3HuNt3r
+deploy:
+  web:
+    build: .
+    expose: 2491/tcp

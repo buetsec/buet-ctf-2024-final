@@ -1,0 +1,11 @@
+{
+    "cookies": [
+        {
+            "name": "secret",
+            "value": "BUETCTF{InJ3cT0r__oF_T#e-Sh@d3s__Sk!ll3d!@C0ntrol5_tQiZXxBPY5gm}"
+        }
+    ],
+    "redirectConsoleOutput": true,
+    "challengeName": "Ghost in the Query",
+    "timeout": 5000
+}

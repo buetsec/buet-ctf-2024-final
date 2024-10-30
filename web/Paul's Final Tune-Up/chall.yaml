@@ -1,0 +1,30 @@
+name: Paul's Final Tune-Up
+categories:
+  - Web
+level: Medium
+dependency: N/A
+value: Dynamic (225 to 150)
+flag: BUETCTF{D34dEnd_JWT_AccessEng1n3_C1ty0fF4ll_4lg0FL4W_r3V3aLeD_H4ck3d_Path_5ePsckJ5PnYT}
+description: |-
+  In the shadowed alleys of Noxhaven, Paul's patience has hit its limit. 
+  You've outmaneuvered his system two times already, and now he's reinforced 
+  every digital lock in his garage. He's betting everything that this time, 
+  you won't make it past him. Think you've got what it takes to break through 
+  one last time?
+
+  N.B: This is a follow-up of [this](https://github.com/buetsec/buet-ctf-2024-preliminary/blob/main/web/Secrets%20of%20the%20Fallen%20Drive%20-%202/Writeup.md) preliminary problem 
+hints:
+  -  Does the garage need a new set of locks, or is it the key you're using that's the problem? (Penalty - 25)
+files:
+  - src: Deployed link and port
+  - src: /src/public.pem
+    dest: public-key.pem
+  - src: ./server.js
+  - src: /src/package.json
+    dest: package.json
+authors:
+  - C0d3HuNt3r
+deploy:
+  web:
+    build: .
+    expose: 2490/tcp

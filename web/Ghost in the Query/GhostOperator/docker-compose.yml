@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  ghost_operator:
+    build: .
+    ports:
+      - "2491:2491"
+    container_name: ghost_operator_query

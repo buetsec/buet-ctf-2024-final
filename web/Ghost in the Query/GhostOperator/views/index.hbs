@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Ghost Operator</title>
+    <style>
+        body {
+            font-family: 'Space Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        img {
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #4a4e69;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #4a4e69;
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: none;
+            width: 125%;
+        }
+
+        .btn {
+            padding: 10px;
+            background-color: #4a4e69;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2d3142;
+        }
+
+        #load {
+            visibility: hidden;
+            height: 20px;
+            margin-top: 15px;
+            border-top: 2px solid #4a4e69;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome to the Ghost Operator!</h2>
+    <h2>Simply enter a URL, and it will explore the site on your behalf!</h2>
+    <h2 id="chall">{{challengeTitle}}</h2>
+    <form action="/" method="post">
+        <input name="link" type="text" placeholder="Enter URL here, e.g., https://example.com/">
+        <button type="submit" class="btn" onclick="document.getElementById('load').style.visibility = 'visible'">Send
+            for Review</button>
+    </form>
+    <p style="color:{{msgColor}}">{{status}}</p>
+    <div id="load"></div>
+
+    {{#if info}}
+    <script>
+        console.log("%cGhost Operator Console:", "color: #b5838d; font-size: 1.2rem");
+        "{{{info}}}".substring(2).split(',||').forEach(line => console.log(line));
+    </script>
+    {{/if}}
+</body>
+
+</html>

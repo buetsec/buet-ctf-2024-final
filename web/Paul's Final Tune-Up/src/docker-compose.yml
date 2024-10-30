@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  drive_reboot:
+    build: .
+    ports:
+      - "2490:2490"
+    container_name: fallen_drive_secrets_reboot
