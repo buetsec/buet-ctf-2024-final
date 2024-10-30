@@ -1,0 +1,25 @@
+name: Encrypted Relics
+categories:
+  - Rev
+level: Medium
+dependency: N/A
+value: Dynamic (150 to 75)
+flag: BUETCTF{n0x_h@v3n_l0st_pickled_p@ck3t_f1l3_8q6kdy8}
+description: |-
+  In the hidden archives of Noxhaven, whispers tell of an ancient 
+  method dubbed "pickling", that developers seemed to like. It's used to lock away valuable 
+  code relics from prying eyes, masking their true purpose. The Shades 
+  suspect that a fragment containing traces of 
+  pre-Fall tech lies within—but it won't reveal itself easily. 
+  Are you savvy enough to decode it?
+
+  Flag Format: BUETCTF{y0ur_d3c0d3d_fl4g}
+hints:
+  - What is "pickling" in the tech world? (Penalty - 10)
+  - Could there be a way to reveal the inner workings of a mysterious function? (Penalty - 20)
+files:
+  - src: enc.nocap
+authors:
+  - C0d3HuNt3r
+
+# q6kdy8phEuu>Yp]
