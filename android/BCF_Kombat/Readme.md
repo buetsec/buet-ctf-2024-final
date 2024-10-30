@@ -8,7 +8,7 @@
 
 - Challenge Description:
 
-```No Description```
+```Grab opportunity to be a billioniare with BCF Kombat!```
 
 [BCF_Kombat.apk](./BCF_Kombat.apk)
 
