@@ -1,0 +1,21 @@
+name: Cipher in the Night
+categories:
+  - Crypto
+level: Easy
+dependency: N/A
+value: Dynamic (100 to 50)
+flag: buetctf{key_to_unlock_the_shaded_truth_skeletons}
+description: |-
+  In the heart of Noxhaven, secrets are buried beneath layers of digital 
+  encryption. The Shadows have intercepted a message, `enc.txt`, but it's locked 
+  away with a simple key—one that hides in plain sight. Your task is to 
+  unravel the hidden truth encoded in the XOR cipher, revealing what the 
+  corrupt megacorporations have been trying to conceal. Can you decipher the 
+  enigma before the shadows close in?
+
+  Flag Format: BUETCTF{flag}
+
+files:
+  - src: enc.txt
+authors:
+  - C0d3HuNt3r
