@@ -1,7 +1,34 @@
 import socket
 import time
 
-escape_path = [
+def solve_maze(host, port, team_code, moves):
+
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.connect((host, port))
+        print(s.recv(1024).decode())  
+
+        
+        s.sendall((team_code + '\n').encode())
+        print(s.recv(1024).decode())  
+
+        
+        for move in moves:
+            s.sendall((move + '\n').encode())
+            response = s.recv(1024).decode()
+            print(response)
+            
+            if "Congratulations" in response or "Connection closed" in response:
+                break  
+
+        
+        remaining_response = s.recv(1024).decode()
+        print(remaining_response)
+
+# Team code and moves
+host = "178.128.214.190"
+port = 7777
+team_code = input("Team Code: ")
+moves = [
     'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 
     'R', 'R', 'R', 'R', 'D', 'D', 'D', 'D', 
     'R', 'R', 'R', 'R', 'R', 'R', 'U', 'U', 
@@ -12,44 +39,6 @@ escape_path = [
     'R', 'R', 'D', 'D', 'R', 'R', 'D', 'D',
     'R', 'R', 'U', 'U', 'R', 'R', 'D', 'D',
     'D', 'D', 'D', 'D', 'D', 'R'
-]
+]  
 
-def main():
-    server_ip = '127.0.0.1'  
-    server_port = 7777
-
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect((server_ip, server_port))
-        
-        team_code = "demo_team_code"
-        s.sendall(team_code.encode())  
-
-        start_time = time.time()
-        time_limit = 30  
-
-        index = 0  
-        path_string = ""  
-
-        while True:
-            response = s.recv(4096).decode()
-            print(response)
-            if "Congratulations" in response or "Time's up" in response:
-                break
-            
-            if time.time() - start_time < time_limit:
-                if index < len(escape_path):
-                    move = escape_path[index]
-                    path_string += move  
-                    print(f"\nMoving: {move} (Path: {path_string})")
-                    s.sendall(move.encode())
-                    index += 1  
-                    time.sleep(0.2)  
-                else:
-                    print("No more moves in the escape path.")
-                    break
-            else:
-                print("Time's up!")
-                break
-
-if __name__ == "__main__":
-    main()
+solve_maze(host, port, team_code, moves)
